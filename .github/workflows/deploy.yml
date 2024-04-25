@@ -32,7 +32,7 @@ jobs:
         run: |
           echo "Building with BASE_PATH: $BASE_PATH"
           npm run build -- --base $BASE_PATH 
-          VITE_SANDBOX=true run build -- --base $BASE_PATH/sandbox --outDir dist/sandbox 
+          VITE_SANDBOX=true npm run build -- --base $BASE_PATH/sandbox --outDir dist/sandbox 
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
