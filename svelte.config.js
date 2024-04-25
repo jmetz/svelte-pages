@@ -6,6 +6,7 @@ const config = {
     preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter({
+			pages: 'dist',
 			fallback: '404.html'
 		}),
 		paths: {
